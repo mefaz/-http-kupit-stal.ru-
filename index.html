@@ -77,6 +77,7 @@ function show(state){
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
+			$(".form_conteiners").fadeOut();
 			$(".form_done").fadeIn();
 			$("#contact_form").trigger("reset");
 		});
